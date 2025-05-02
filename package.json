@@ -1,0 +1,30 @@
+{
+  "name": "todo-list",
+  "version": "1.0.0",
+  "description": "Todo List Web App",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rokhai/Todo-List.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rokhai/Todo-List/issues"
+  },
+  "homepage": "https://github.com/Rokhai/Todo-List#readme",
+  "devDependencies": {
+    "sass": "^1.87.0",
+    "vite": "^6.3.4"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.5"
+  }
+}
