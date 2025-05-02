@@ -13,8 +13,7 @@ function uniqueDateTimeIdGenerator() {
     return `${timestamp}${salt}`;
 
 }
-// const timestamp = uniqueDateTimeIdGenerator();
-// console.log(timestamp);
+
 
 function createNewTaskObject(task = 'task') {
     const task_object = {
@@ -307,8 +306,6 @@ addGlobalEventListener('click', '.task-checkbox', e => {
 
 
     if (e.target.checked === true) {
-        // e.target.task_checkbox.checked = false;
-        // e.target.task_checkbox.checked = false;
         console.log("Hello World! Checkbox checked")
         task_box.classList.add("task-done");
         itemsArray.forEach(item => {
@@ -318,8 +315,6 @@ addGlobalEventListener('click', '.task-checkbox', e => {
             }
         });
     } else {
-        // e.target.task_checkbox.checked = true;
-        // e.target.task_checkbox.checked = true;
         task_box.classList.remove("task-done");
         itemsArray.forEach(item => {
             if (item.task_id === task_id) {
@@ -328,7 +323,6 @@ addGlobalEventListener('click', '.task-checkbox', e => {
         });
     }
     localStorage.setItem("items", JSON.stringify(itemsArray));
-    // lucide.createIcons();
 })
 
 
