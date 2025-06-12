@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Development version -->
+
+</head>
+
+<body>
+    <main>
+
+        <header class="todo-app-header">
+            <h2 class="todo-app-title">Todo List</h2>
+            <section class="text-input-task-container">
+                <input type="text" class="text-input-task" id="text-input-task" placeholder="Add task...">
+                <button class="btn-add-task" id="btn-add-task">
+                    <i data-lucide="square-pen"></i>
+                    <span>Add task</span>
+                </button>
+            </section>
+        </header>
+
+        <section class="tasks-container">
+
+            <!-- <section class="task-container">
+                <section class="task-detail">
+                    <input type="checkbox" name="option" class="task-checkbox" task-id="69"/>
+                    <input type="text" name="" task-id="69"
+                        value="Task 1 ........................hahahah...................................sdada........hahah."
+                        class="task-name" disabled>
+                </section>
+                <section class="task-options">
+                    <button class="task-option task-option-edit" task-id="69">
+                        <i data-lucide="pencil-line" task-id="69"></i>
+                        Edit
+                    </button>
+                    <button class="task-option task-option-delete">
+                        <i data-lucide="trash"></i>
+                        Delete
+                    </button>
+                </section>
+            </section> -->
+
+            <section class="empty-tasks-container">
+                <i data-lucide="circle-x" class="empty-tasks-icon"></i>
+                <span class="empty-tasks-label">No tasks available. Add a new task to get started!</span>
+            </section>
+        </section>
+    </main>
+
+
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="js/main.js" defer></script>
+</body>
+</html>
